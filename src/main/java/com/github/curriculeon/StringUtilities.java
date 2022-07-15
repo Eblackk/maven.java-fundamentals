@@ -99,6 +99,19 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse) {
-        return null;
+         String result= "";
+         char[] characterarray = stringToReverse.toCharArray();
+         int numberofcharacters = characterarray.length;
+         int lastindex = numberofcharacters -1;
+         int numberoftimeslooped = 0;
+         while (numberofcharacters > numberoftimeslooped){
+             int currentindex = lastindex - numberoftimeslooped;
+             char currentCharacter = characterarray[currentindex];
+             result = result + currentCharacter;
+
+             System.out.println(currentCharacter);
+             numberoftimeslooped = numberoftimeslooped + 1;
+         }
+        return result;
     }
 }
