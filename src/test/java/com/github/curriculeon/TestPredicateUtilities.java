@@ -90,7 +90,7 @@ public class TestPredicateUtilities {
         int lesserValue = 3;
 
         // : When
-        boolean outcome = predicateUtilities.isLessThanOrEqualTo(greaterValue, lesserValue);
+cd        boolean outcome = predicateUtilities.isLessThanOrEqualTo(greaterValue, lesserValue);
 
         // : Then
         assertTrue(outcome);
